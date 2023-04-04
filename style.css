@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+* {
+  /* --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    
+    ### Neutral
+    
+    - Dark brown: hsl(25, 47%, 15%)
+    - Medium brown: hsl(28, 10%, 53%)
+    - Cream: hsl(27, 66%, 92%)
+    - Very pale orange: hsl(33, 100%, 98%) */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  position: relative;
+  font-family: "DM Sans", sans-serif;
+  background-color: hsl(27, 66%, 92%);
+}
+/* ----------------------------------------------------------- */
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(10, 79%, 65%);
+  color: hsl(33, 100%, 98%);
+  padding: 20px;
+  border-radius: 12px;
+}
+header img {
+  width: 50px;
+}
+.mybalance {
+  font-size: 12px;
+}
+.balance {
+  font-size: 1.5rem;
+}
+/* ----------------------------------------------------------- */
+#col-chart {
+  width: 400px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.total-months {
+  background-color: #fff;
+  position: relative;
+  top: -80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 12px 12px;
+  border-top: 1px solid hsl(28, 10%, 53%);
+  padding: 20px;
+  width: 400px;
+}
+.month {
+  font-size: 12px;
+  color: hsl(28, 10%, 53%);
+}
+.last-month {
+  font-weight: 700;
+}
+.dollar-amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+/* ----------------------------------------------------------- */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: -80px;
+  width: 400px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  #wrapper {
+    margin-left: 50px;
+    margin-top: 50%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+}
